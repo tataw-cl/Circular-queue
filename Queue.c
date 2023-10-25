@@ -26,7 +26,7 @@ int IsEmpty(){
 
 //Function to check if the array is full
 int IsFull(){
-    if((tail==MAX && head==-1)||((head==(tail+1)%MAX))){
+    if((tail==MAX && head==-1)||((head==(tail+1)%MAX-1))){
    //    printf("The queue is full\n");
         return 0;
     }
