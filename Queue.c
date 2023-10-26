@@ -94,11 +94,11 @@ void printQ(){
     printf("Queue members are as follows:\n");
     if (checker!=0)
     {
-        for(int i=(head+1);i<MAX;i++){
-        printf("%d and it's of index %d\n",Array[i], i);
+        for(int i=(head+1);i<MAX;i++){//prints to tail if no cycling took place
+                printf("%d and it's of index %d\n",Array[i], i);
     }
 for(int i=0;i<tail;i++){
-        printf("%d and it's of index %d\n", Array[i],i); 
+        printf("%d and it's of index %d\n", Array[i],i); //prints from head to max, then from 0 to tail if cycling occured
           }
     printf("Position of head is %d\n",head);
      printf("Position of tail is %d\n",tail);
