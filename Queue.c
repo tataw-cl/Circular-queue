@@ -26,7 +26,7 @@ int IsEmpty(){
 
 //Function to check if the array is full
 int IsFull(){
-    if((tail==MAX && head==-1)||((head==(tail+1)%MAX))){
+    if((tail==MAX && head==-1)||(tail==(head+1))&&checker!=0){
         return 0;
     }
     else if (tail==MAX && head!=-1)
@@ -97,7 +97,7 @@ void printQ(){
         for(int i=(head+1);i<MAX;i++){
         printf("%d and it's of index %d\n",Array[i], i);
     }
-for(int i=0;i<=tail;i++){
+for(int i=0;i<tail;i++){
         printf("%d and it's of index %d\n", Array[i],i); 
           }
     printf("Position of head is %d\n",head);
