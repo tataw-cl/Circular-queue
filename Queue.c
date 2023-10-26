@@ -26,7 +26,7 @@ int IsEmpty(){
 
 //Function to check if the array is full
 int IsFull(){
-    if((tail==MAX && head==-1)||(tail==(head+1))&&checker!=0){
+    if((tail==MAX && head==-1)||(tail==(head+1))&&checker!=0){//will run untill just after head
         return 0;
     }
     else if (tail==MAX && head!=-1)
